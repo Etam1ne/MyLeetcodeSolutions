@@ -4,6 +4,7 @@
  */
 let mySqrt = function(x) {
     if (x < 2) return x;
+    
     let result = 0;
     let start = 1;
     let end = x / 2;
@@ -11,7 +12,7 @@ let mySqrt = function(x) {
     while(start <= end) {
         let mid = Math.floor(start + (end - start) / 2);
         let sqr = mid * mid;
-        
+
         if (sqr == x) return mid;
         else if (sqr < x) { 
             start = mid + 1; 
