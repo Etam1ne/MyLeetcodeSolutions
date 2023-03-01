@@ -17,15 +17,6 @@ let isValid = function(s) {
     }
 
     return store.length === 0;
-    // const Parantheses = [["(", "{", "["],
-    //                      [")", "}", "]"]];
-    // let currentParantheses = Parantheses[0].indexOf(s[0]);
-
-    // for (let i = 1; i < s.length; i++) {
-    //     if (currentParantheses !== Parantheses[1].indexOf(s[i])) return false;
-    //     currentParantheses = Parantheses[0].indexOf(s[i])
-    // }
-    // return true;
 };
 
 console.log(isValid("()[]{}"))
